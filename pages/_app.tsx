@@ -13,6 +13,9 @@ import CoWorkers from "../components/cms-components/CoWorkers";
 import Worker from "../components/cms-components/Worker";
 import Blockquote from "../components/cms-components/Blockquote";
 import Article from "../components/cms-components/Article";
+import ArticlePage from "../components/cms-components/ArticlePage";
+import TeaserImage from "../components/cms-components/TeaserImage";
+import RichText from "../components/cms-components/RichText";
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Open_Sans({ subsets: ["latin"] });
@@ -27,6 +30,9 @@ const components = {
   Worker: Worker,
   blockquote: Blockquote,
   article: Article,
+  articlepage: ArticlePage,
+  teaserimage: TeaserImage,
+  richtext: RichText,
 };
 
 storyblokInit({

@@ -12,10 +12,10 @@ import {
 } from "@storyblok/react";
 import Head from "next/head";
 
-function HomePage({ story, nav }) {
+function HomePage({ story, nav, footer }) {
   story = useStoryblokState(story);
   return (
-    <Layout links={nav ? nav.links : []}>
+    <Layout links={nav ? nav.links : []} footer={footer}>
       {/* Welcome to Next.js! <Button>A button</Button> */}
       <Head>
         <title>{story ? story.name : "My Site"}</title>
@@ -48,12 +48,14 @@ export async function getStaticProps() {
   const storyblokApi = getStoryblokApi();
   let { data } = await storyblokApi.get(`cdn/stories/${slug}`, sbParams);
   let nav = await storyblokApi.get(`cdn/stories/global/header-links`);
-  console.log(data);
+  let footer = await storyblokApi.get(`cdn/stories/global/footer`);
+  console.log(footer);
   return {
     props: {
       story: data ? data.story : false,
       key: data ? data.story.id : false,
       nav: nav?.data?.story?.content || false,
+      footer: footer?.data?.story?.content || false,
     },
     revalidate: 3600,
   };

@@ -1,3 +1,4 @@
+import { render } from "storyblok-rich-text-react-renderer";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
@@ -8,10 +9,12 @@ const StyledFooter = styled.footer`
   text-align: center;
 `;
 
-const Footer = () => {
+const Footer = ({ content }) => {
+  console.log("footer content: ", content);
   return (
     <StyledFooter>
-      Nordic Trax AB | Rågåkersgatan 23 78174 Borlänge
+      {content && content.links.map((item) => render(item.content))}
+      {/* Nordic Trax AB | Rågåkersgatan 23 78174 Borlänge */}
     </StyledFooter>
   );
 };

@@ -16,6 +16,9 @@ const HeroContainer = styled.div`
     max-width: 100%;
     height: auto;
   }
+  h1 {
+    margin-bottom: 0;
+  }
   .hero-inner {
     padding-top: 45.32%;
     background-repeat: no-repeat;

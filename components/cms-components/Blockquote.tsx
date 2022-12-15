@@ -7,7 +7,7 @@ const StyledBlockquote = styled.div`
   max-width: 100%;
   margin: 0 auto 4rem auto;
   padding: 2rem 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 110%;
   font-weight: bold;
   border-top: 1px solid #eee;
