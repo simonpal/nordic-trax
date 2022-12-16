@@ -5,6 +5,7 @@ import Grid from "./Grid";
 import Navigation from "./Navigation";
 import FacebookIcon from "./icons/Facebook";
 import InstagramIcon from "./icons/InstagramIcon";
+import Link from "next/link";
 
 const StyledHeader = styled.header`
   padding: 2rem 0;
@@ -56,12 +57,14 @@ const Header = ({ links = [] }) => {
     <StyledHeader>
       <Grid spacing="small">
         <Column lg="3" md="3" sm="3" xs="12">
-          <Image
-            src="/images/logo.jpg"
-            alt="Nordic Trax"
-            width="311"
-            height="65"
-          />
+          <Link href="/">
+            <Image
+              src="/images/logo.jpg"
+              alt="Nordic Trax"
+              width="311"
+              height="65"
+            />
+          </Link>
         </Column>
         <Column
           lg="9"
