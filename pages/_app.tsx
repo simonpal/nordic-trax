@@ -16,6 +16,7 @@ import Article from "../components/cms-components/Article";
 import ArticlePage from "../components/cms-components/ArticlePage";
 import TeaserImage from "../components/cms-components/TeaserImage";
 import RichText from "../components/cms-components/RichText";
+import SEOMeta from "../components/cms-components/SEOMeta";
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Open_Sans({ subsets: ["latin"] });
@@ -33,6 +34,7 @@ const components = {
   articlepage: ArticlePage,
   teaserimage: TeaserImage,
   richtext: RichText,
+  seo_meta: SEOMeta,
 };
 
 storyblokInit({
