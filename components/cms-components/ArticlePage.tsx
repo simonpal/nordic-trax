@@ -8,6 +8,9 @@ const NarrowContent = styled.div`
   width: 600px;
   max-width: 100%;
   margin: 0 auto;
+  @media screen and (max-width: 1280px) {
+    padding: 0 1rem;
+  }
 `;
 
 const Page = (props) => {

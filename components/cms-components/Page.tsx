@@ -5,6 +5,9 @@ const MainContent = styled.div`
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  @media screen and (max-width: 1280px) {
+    padding: 0 1rem;
+  }
 `;
 
 const Page = (props) => {

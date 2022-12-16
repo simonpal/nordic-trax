@@ -22,6 +22,7 @@ const StyledWorker = styled.div`
   }
   @media screen and (max-width: 420px) {
     width: 100%;
+    border-bottom: 1px solid #eee;
   }
 `;
 

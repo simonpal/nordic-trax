@@ -20,9 +20,10 @@ const StyledBlockquote = styled.div`
     bottom: -43px;
     right: 30px;
   }
-  @media screen and (max-width: 420px) {
-    font-size: 2rem;
-    padding: 0 1rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 1.75rem;
+    padding: 1rem;
+    text-align: center;
     &:after {
       font-size: 5rem;
     }

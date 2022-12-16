@@ -20,6 +20,15 @@ const StyledCmsGrid = styled.div`
       padding-right: 0;
     } */
   }
+  @media screen and (max-width: 1280px) {
+    max-width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    justify-content: flex-start;
+    /* .column {
+      width: 50%;
+    } */
+  }
   @media screen and (max-width: 420px) {
     flex-direction: column;
     margin: 0;

@@ -2,7 +2,7 @@ import { render } from "storyblok-rich-text-react-renderer";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   margin-top: 2rem;
   border-top: 1px solid #eee;
   color: #888;
