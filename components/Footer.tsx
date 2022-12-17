@@ -10,7 +10,7 @@ const StyledFooter = styled.footer`
 `;
 
 const Footer = ({ content }) => {
-  console.log("footer content: ", content);
+  // console.log("footer content: ", content);
   return (
     <StyledFooter>
       {content && content.links.map((item) => render(item.content))}

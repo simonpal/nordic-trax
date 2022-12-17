@@ -15,7 +15,7 @@ const NarrowContent = styled.div`
 
 const Page = (props) => {
   const { blok, title } = props;
-  console.log(blok);
+  // console.log(blok);
   return (
     <NarrowContent className="content-container" {...storyblokEditable(blok)}>
       <h1>{title}</h1>

@@ -6,7 +6,7 @@ import Head from "next/head";
 <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" /> */
 }
 const SEOMeta = ({ blok }) => {
-  console.log(blok);
+  //   console.log(blok);
   const { title, description, og_image } = blok;
   if (!title && !description && !og_image.filename) return null;
   return (

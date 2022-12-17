@@ -50,7 +50,7 @@ export async function getStaticProps() {
   let { data } = await storyblokApi.get(`cdn/stories/${slug}`, sbParams);
   let nav = await storyblokApi.get(`cdn/stories/global/header-links`);
   let footer = await storyblokApi.get(`cdn/stories/global/footer`);
-  console.log(data);
+  // console.log(data);
   return {
     props: {
       story: data ? data.story : false,
