@@ -14,6 +14,7 @@ const StyledNav = styled.nav`
     &:after {
       content: "";
       height: 4px;
+      border-radius: 2px;
       background-color: #000;
       width: 0;
       transition: all 0.3s ease;
