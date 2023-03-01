@@ -58,6 +58,10 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  color: #000;
+}
+
 .page-content {
   display: flex;
   flex-direction: column;

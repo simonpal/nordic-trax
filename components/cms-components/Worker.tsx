@@ -12,10 +12,18 @@ const StyledWorker = styled.div`
   h3 {
     margin: 1rem 0;
   }
+  p {
+    text-align: center;
+  }
   img {
     border-radius: 50%;
     max-width: 80%;
     height: auto;
+    transition: filter 0.3s ease;
+    filter: grayscale(60%);
+    &:hover {
+      filter: grayscale(0);
+    }
   }
   @media screen and (max-width: 1024px) {
     width: 50%;
