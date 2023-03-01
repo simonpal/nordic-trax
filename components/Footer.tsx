@@ -5,7 +5,7 @@ const StyledFooter = styled.footer`
   padding: 2rem 1rem;
   margin-top: 2rem;
   border-top: 1px solid #eee;
-  color: #888;
+  color: #555;
   text-align: center;
 `;
 

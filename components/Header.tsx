@@ -78,11 +78,21 @@ const Header = ({ links = [] }) => {
           <NavAndIcons>
             <Navigation menuItems={links} />
             <SocialMediaIcons>
-              <a href="https://www.facebook.com/NordicTraxAB" target="_blank">
-                <FacebookIcon />
+              <a
+                href="https://www.facebook.com/NordicTraxAB"
+                target="_blank"
+                title="Följ oss på Facebook"
+                aria-label="Följ oss på Facebook"
+              >
+                <FacebookIcon aria-hidden="true" />
               </a>
-              <a href="https://www.instagram.com/nordictraxab/" target="_blank">
-                <InstagramIcon />
+              <a
+                href="https://www.instagram.com/nordictraxab/"
+                target="_blank"
+                title="Följ oss på Instagram"
+                aria-label="Följ oss på Instagram"
+              >
+                <InstagramIcon aria-hidden="true" />
               </a>
             </SocialMediaIcons>
           </NavAndIcons>
