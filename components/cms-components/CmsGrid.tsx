@@ -1,13 +1,13 @@
-import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
-import styled from "styled-components";
+import { storyblokEditable, StoryblokComponent } from '@storyblok/react';
+import styled from 'styled-components';
 
 const StyledCmsGrid = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: calc(1280px + 2rem);
-  max-width: calc(1280px + 2rem);
+  width: calc(100% + 2rem);
+  max-width: calc(100% + 2rem);
   align-items: flex-start;
   margin: 0 -1rem;
   .column {
