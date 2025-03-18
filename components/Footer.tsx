@@ -1,5 +1,6 @@
-import { render } from "storyblok-rich-text-react-renderer";
-import styled from "styled-components";
+import { StoryblokComponent } from '@storyblok/react';
+import { render } from 'storyblok-rich-text-react-renderer';
+import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
   padding: 2rem 1rem;
@@ -7,14 +8,18 @@ const StyledFooter = styled.footer`
   border-top: 1px solid #eee;
   color: #555;
   text-align: center;
+  img {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 `;
 
 const Footer = ({ content }) => {
-  // console.log("footer content: ", content);
+  console.log('footer content: ', content);
   return (
     <StyledFooter>
       {content && content.links.map((item) => render(item.content))}
-      {/* Nordic Trax AB | Rågåkersgatan 23 78174 Borlänge */}
+      {/* <StoryblokComponent key={item._uid} blok={item.content} /> */}
     </StyledFooter>
   );
 };
